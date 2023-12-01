@@ -1,0 +1,59 @@
+#receipt-sheet{
+    background: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    width: 580px !important;
+    height: fit-content;
+    border: 2px solid #aaaaaa;
+    border-radius: 7px;
+    margin-bottom: 10px;
+  }
+  #receipt-sheet #receipt-inner > #row{
+    width: 100%;
+    padding: 0 7px 0 7px;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  #receipt-sheet #receipt-inner > #row strong{
+    font-size: 14px;
+    font-weight: 600;
+  }
+  #receipt-sheet #receipt-inner #content > p{
+    font-size: 13px;
+    width: 100%;
+    padding: 0 7px 15px 7px;
+    border-bottom: 1px solid #f4f4f4;
+  }
+  #receipt-sheet #receipt-inner #content #row{
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  #receipt-sheet #receipt-inner #content strong{
+    font-size: 14px;
+    font-weight: 600;
+  }
+  #receipt-sheet #receipt-inner #content span{
+    font-size: 13px;
+    width: fit-content;
+  }
+  /* #receipt-sheet #receipt-inner{
+    border: 2px solid #aaaaaa;
+    border-radius: 7px;
+  } */
+  #receipt-sheet #receipt-inner h6{
+    padding: 0 7px 0 7px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    margin-top: 60px;
+  }
+  #receipt-sheet #receipt-inner h4{
+    width: 100%;
+    background: #f4f4f4;
+    height: 50px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

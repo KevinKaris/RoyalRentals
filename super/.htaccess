@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+DirectoryIndex index.php
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^dashboard$ index.php [NC]
+RewriteRule ^rentals$ rentals.php [NC]
+RewriteRule ^managers$ managers.php [NC]
+RewriteRule ^inquiry$ inquiry.php [NC]
+RewriteRule ^reports$ reports.php [NC]
+RewriteRule ^profile$ profile.php [NC]
+RewriteRule ^lock$ lock.php [NC]
+RewriteRule ^set-rent$ set-rent.php [NC]
+RewriteRule ^register$ register.html [NC]
+RewriteRule ^manager-documentation$ manager-documentation.php [NC]
+RewriteRule ^owner-documentation$ owner-documentation.php [NC]
+RewriteRule ^bill$ bill.php [NC]
+
+</IfModule>

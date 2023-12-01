@@ -1,0 +1,30 @@
+<IfModule mod_rewrite.c>
+DirectoryIndex index.php
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^dashboard$ index.php [NC]
+RewriteRule ^all-tenants$ all-tenants.php [NC]
+RewriteRule ^all-receipts$ all-tenants-receipt.php [NC]
+RewriteRule ^email$ email.php [NC]
+RewriteRule ^sms$ sms.php [NC]
+RewriteRule ^expenses$ expenses.php [NC]
+RewriteRule ^fined$ fined-tenants.php [NC]
+RewriteRule ^houses$ houses.php [NC]
+RewriteRule ^individual-receipt$ individual-tenant-receipt.php [NC]
+RewriteRule ^lock$ lock.php [NC]
+RewriteRule ^profile$ profile.php [NC]
+RewriteRule ^recent$ recent-tenants.php [NC]
+RewriteRule ^payment$ rent-payment.php [NC]
+RewriteRule ^set-rent$ set-rent.php [NC]
+RewriteRule ^inquiry$ inquiry.php [NC]
+# RewriteRule ^farmer(.*)$ Farmer-Portal/$1 [NC]
+# RewriteRule ^buyer(.*)$ Buyer-Portal/$1 [NC]
+RewriteRule ^with-balance$ tenantsb.php [NC]
+RewriteRule ^without-balance$ tenantswb.php [NC]
+RewriteRule ^documentation$ documentation.php [NC]
+RewriteRule ^login$ login.html [NC]
+
+</IfModule>
